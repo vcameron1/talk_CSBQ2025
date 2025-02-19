@@ -1,0 +1,391 @@
+/* Hyperlink color*/
+a, a > code {
+  color: #7ab5b0;
+}
+
+.remark-slide-content {
+    background-color: white;
+    /* border-top: 80px solid #1f3d31; */
+    font-family: "Lato regular", sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.4;
+    padding: 5em 2em 1em 2em
+  }
+
+.remark-slide-content:not(.title-slide)::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 20px;
+    width: 100px;
+    height: 30px; /* Ajustez la hauteur si nécessaire */
+    background-image: url("assets/img/bq_papillon_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+  .footnote {
+    position: absolute;
+    bottom: 1em;
+    padding-right: 4em;
+    font-size: 90%;
+  }
+
+/* citation in bottomright page*/
+.cite {
+  bottom: 12px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #2e483e;
+  opacity: .8;
+  position: absolute;
+  right: 100px;
+  font-size: 17px;
+}
+
+  .inverse {
+    background-color: #2E2E2E;
+    border-top: 80px solid #2E2E2E;
+    text-shadow: none;
+  }
+  
+  /* Titre h1 */
+  .remark-slide-content h1 {
+    font-size: 30px;
+    font-family: "Brother 1816 bold", sans serif;
+    z-index: 2; /* Assure que le h1 est au-dessus de la barre */
+    color: #FBF8EE;
+    display: inline-block;
+    padding-left: 35px;
+  }
+
+  /* Ajout d'une barre verte derrière h1 */
+  .remark-slide-content h1 {
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 700px;
+    height: 60px;
+    padding-top: 15px;
+    background-color: #2e483e;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: translateY(-50%);
+    transform: translateX(-40px);
+    z-index: 1; /* Place la barre derrière le texte */
+}
+  
+  .remark-slide-content > inverse {
+    width: 112px;
+    height: 47px;
+    border-bottom: 1px solid black;
+    position: absolute;
+  }
+  
+  /* Removes colored bar from top of the slide resulting in a or empty slide */
+  .clear{
+    border-top: 0px solid #FAFAFA;
+  }
+  
+  .remark-slide-content > h2, h3, h4 {
+    padding-bottom: 0px;
+    color: #a6612d;
+    text-shadow: none;
+    font-family: "Brother 1816 medium sans serif";
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .remark-slide-number {
+    /* Remove slide numbers
+    font-size: 13pt;
+    font-family: 'Fira Sans';
+    color: #272822;
+    opacity: 1; */
+    display: none;
+  }
+
+  .inverse .remark-slide-number {
+    font-size: 13pt;
+    font-family: "Lato", sans-serif;
+    color: #F0F0F0;
+    opacity: 1;
+  }
+
+  .inverse h2 {
+    font-size: 15pt;
+    color: #F0F0F0;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  
+/* Title slide */
+  /* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
+  .title-slide .remark-slide-number {
+    display: none;
+  }
+
+  /* set link color on title-slide the same color as the title */
+  .title-slide a, a > code {
+    color: #e7e8e2;
+  }
+
+  .title-slide {
+    background-image: url("assets/img/bg_bq.png");
+    background-color: #2E2E2E;
+    background-size: cover;
+    border: 0px;
+    background-position: 0px 0;
+    line-height: 0;
+    }
+
+  .title {
+    position: absolute;
+    color: #F0F0F0; 
+    font-size:  26px!important;
+    font-weight: bold;
+    top: 420px;
+    left: 50px;
+    width: 40%;
+    line-height: 1;
+    }
+
+  .instructors {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 50%;
+    }
+
+  .institution {
+    position: absolute;
+    top: 580px;
+    left: 50px;
+    color: black;
+    font-size: 23px;
+    font-weight: normal;
+    width: 50%;
+    }
+
+  .title-page-logo1 {
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    width: 150px;
+    }
+
+  .title-page-logo2 {
+    position: absolute;
+    bottom: 5px;
+    left: 210px;
+    width: 150px;
+    }
+
+  .title-page-logo3 {
+    position: absolute;
+    bottom: 5px;
+    left: 370px;
+    width: 150px;
+    }
+
+/******************
+ * 
+ * Side to side content boxes
+ *
+ ****************/
+    .conteneur-box {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .box {
+      flex: 1;
+      margin: 25px 10px;
+      padding: 0 25px;
+      border: 1px solid #7bb5b1;
+      border-radius: 15px;
+      background-color: #7bb5b1;
+      color: black;
+    }
+
+
+/******************
+ * 
+ * Coloured content boxes
+ *
+ ****************/
+
+
+ .content-box { 
+  /* box-sizing: content-box; */
+  background-color: #adadad;
+  border-radius: 15px;
+  margin: 25px 0;
+  overflow: hidden;
+  padding: 0 25px;
+  width: auto;
+  color: black;
+}
+
+
+.content-box-blue,
+.content-box-gray,
+.content-box-grey,
+.content-box-army,
+.content-box-green,
+.content-box-purple,
+.content-box-red,
+.content-box-yellow {
+  border-radius: 15px;
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  width: 100%;
+}
+
+/******************
+ * 
+ * Inline code
+ *
+ ****************/
+  
+.remark-inline-code {
+  /* background: #F5F5F5; /* lighter */
+  background: #e7e8e2; /* darker */
+  border-radius: 3px;
+  padding: 4px;
+}
+
+/**************
+
+ Font size and colours
+
+*************/
+
+.code10 .remark-code {
+  font-size: 10%;
+}
+
+.code20 .remark-code {
+  font-size: 20%;
+}
+
+.code30 .remark-code {
+  font-size: 30%;
+}
+
+.code40 .remark-code {
+  font-size: 40%;
+}
+
+.code50 .remark-code {
+  font-size: 50%;
+}
+
+.code60 .remark-code {
+  font-size: 60%;
+}
+
+.code70 .remark-code {
+  font-size: 70%;
+}
+
+.code80 .remark-code {
+  font-size: 80%;
+}
+
+.code90 .remark-code {
+  font-size: 90%;
+}
+
+.code100 .remark-code {
+  font-size: 100%;
+}
+
+.font10 {
+  font-size: 10%;
+}
+
+.font20 {
+  font-size: 20%;
+}
+
+.font30 {
+  font-size: 30%;
+}
+
+.font40 {
+  font-size: 40%;
+}
+
+.font50 {
+  font-size: 50%;
+}
+
+.font60 {
+  font-size: 60%;
+}
+
+.font70 {
+  font-size: 70%;
+}
+
+.font80 {
+  font-size: 80%;
+}
+
+.font90 {
+  font-size: 90%;
+}
+
+.font100 {
+  font-size: 100%;
+}
+
+.font110 {
+  font-size: 110%;
+}
+
+.font120 {
+  font-size: 120%;
+}
+
+.font130 {
+  font-size: 130%;
+}
+
+.font140 {
+  font-size: 140%;
+}
+
+.font150 {
+  font-size: 150%;
+}
+
+.font160 {
+  font-size: 160%;
+}
+.font170 {
+  font-size: 170%;
+}
+.font180 {
+  font-size: 180%;
+}
+.font190 {
+  font-size: 190%;
+}
+.font200 {
+  font-size: 200%;
+}
+
+.vertforet { color: #3b907d; }
+.coleoorange { color: #d88219; }

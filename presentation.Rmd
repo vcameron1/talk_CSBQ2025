@@ -1,0 +1,83 @@
+---
+title: "Biodiversité Québec"
+author: "Victor Cameron"
+date: "2025"
+output:
+  xaringan::moon_reader:
+    css: [default, bq.css, bq-fonts.css, "hygge", "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]
+    includes:
+      in_header: style-header.html
+    lib_dir: assets
+    seal: false
+    # self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "macros.js"
+      ratio: "16:9"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Rscript -e "rmarkdown::render('presentation.Rmd')"
+# sudo Rscript -e "options(pagedown.remote.maxattempts=40); pagedown::chrome_print("presentation.html",output="presentation.pdf")"
+```
+
+class: title-slide
+
+.title[Biodiversité Québec, un gabarit de présentation en RMarkdown pour notre utilisation]
+
+.instructors[Présentatrice, Présentateur]
+
+.institution[Université de Sherbrooke]
+
+.title-page-logo1[<img src="assets/img/udes_logo.png">]
+.title-page-logo2[<img src="assets/img/csbq_logo.png">]
+.title-page-logo3[<img src="assets/img/ie_logo.png">]
+
+
+---
+
+# Diapositive 1
+
+## Sous-titre
+
+- Point 1
+- Point 2
+- Point 3
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+
+.cite[Cameron. 2025]
+
+---
+
+# Des boîtes pour séparer l'information
+
+.conteneur-box[
+  .box[
+  .center[**Box 1**]
+  <br>
+  .center[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="height:4em;position:relative;display:inline-block;top:.1em;fill:#000000;"><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5l0-377.4c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8L0 454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5l0-370.3c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11L304 456c0 11.4 11.7 19.3 22.4 15.5z"/></svg>]
+  <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+  ]
+  .box[
+  .center[**Box 2**]
+  <br>
+  .center[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:4em;position:relative;display:inline-block;top:.1em;fill:#000000;"><path d="M448 80l0 48c0 44.2-100.3 80-224 80S0 172.2 0 128L0 80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6L448 288c0 44.2-100.3 80-224 80S0 332.2 0 288L0 186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6l0 85.9c0 44.2-100.3 80-224 80S0 476.2 0 432l0-85.9z"/></svg>]
+  <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+  ]
+  .box[
+  .center[**Box 3**]
+  <br>
+  .center[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:4em;position:relative;display:inline-block;top:.1em;fill:#000000;"><path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5l0 39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9l0 39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7l0-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1L257 256c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>]
+  <br>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+  ]
+]
+
+---
