@@ -26,6 +26,6 @@ Pour convertir la présentation en format PDF.
 Rscript -e "options(pagedown.remote.maxattempts=40); pagedown::chrome_print('bq_markdown_template.html',output='bq_markdown_template.pdf')"
 ```
 
-## Exemple
+## Signature visuelle
 
 ![Exemple de présentation](bq_markdown_template.pdf)

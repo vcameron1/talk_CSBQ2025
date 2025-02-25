@@ -57,7 +57,6 @@ a, a > code {
     font-family: "Brother 1816 bold", sans serif;
     z-index: 2; /* Assure que le h1 est au-dessus de la barre */
     color: #FBF8EE;
-    display: inline-block;
     padding-left: 35px;
   }
 
@@ -66,7 +65,7 @@ a, a > code {
     content: "";
     position: absolute;
     top: 0px;
-    width: 700px;
+    width: 750px;
     height: 60px;
     padding-top: 15px;
     background-color: #2e483e;
@@ -89,7 +88,7 @@ a, a > code {
     border-top: 0px solid #FAFAFA;
   }
   
-  .remark-slide-content > h2, h3, h4 {
+  .remark-slide-content h2, h3, h4 {
     padding-bottom: 0px;
     color: #a6612d;
     text-shadow: none;
@@ -123,7 +122,11 @@ a, a > code {
     opacity: 1;
   }
   
-/* Title slide */
+/************************
+* 
+* Title slide
+* 
+**********************/
   /* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
   .title-slide .remark-slide-number {
     display: none;
@@ -199,6 +202,75 @@ a, a > code {
 
 /******************
  * 
+ * Closing slide
+ *
+ ****************/
+
+ .closing-slide {
+  /* background-image: url("assets/img/bg_bq.png"); */
+  background-color: #2e483e;
+  background-size: cover;
+  border: 0px;
+  background-position: 0px 0;
+  line-height: 0;
+  }
+
+  .closing {
+    position: absolute;
+    color: #F0F0F0; 
+    font-size:  26px!important;
+    font-weight: bold;
+    top: 420px;
+    left: 50px;
+    width: 40%;
+    line-height: 1;
+    }
+
+  .closing-slide-presenter {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 50%;
+    }
+
+  .closing-slide-email {
+    position: absolute;
+    top: 580px;
+    left: 50px;
+    color: black;
+    font-size: 23px;
+    font-weight: normal;
+    width: 50%;
+    }
+
+  .closing-slide-logo1 {
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    width: 150px;
+    }
+
+  .closing-slide-logo2 {
+    position: absolute;
+    bottom: 5px;
+    left: 210px;
+    width: 150px;
+    }
+
+  .closing-slide-logo3 {
+    position: absolute;
+    bottom: 5px;
+    left: 370px;
+    }
+ 
+ 
+ /******************
+ * 
  * Side to side content boxes
  *
  ****************/
@@ -211,9 +283,9 @@ a, a > code {
       flex: 1;
       margin: 25px 10px;
       padding: 0 25px;
-      border: 1px solid #7bb5b1;
+      border: 1px solid #EEEEEE;
       border-radius: 15px;
-      background-color: #7bb5b1;
+      background-color: #EEEEEE;
       color: black;
     }
 
